@@ -1,0 +1,506 @@
+/* ==========================================================================
+   COMMON ELEMENTS
+   ========================================================================== */
+body {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin-top: 40px;
+  line-height: 16px;
+}
+
+.title {
+  color: #293ca9;
+  font-family: "Anton", sans-serif;
+}
+
+.subtitle {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgb(90, 89, 89);
+}
+
+.titulo-com-linha {
+  position: relative;
+}
+
+.titulo-com-linha::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 45%;
+  width: 10%;
+  height: 2px;
+  background-color: #4155c5;
+}
+.navText,
+.timelineTitle,
+.text {
+  font-family: "Kanit", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-top-margin {
+  margin-top: 75px;
+}
+.main-low-margin {
+  margin-top: 55px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 30px;
+  margin-bottom: 23px;
+}
+
+.img-margin-product {
+  margin-top: 30px;
+}
+.bottam-pad {
+  padding-bottom: 40px;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.color-github {
+  color: #1f2328;
+}
+.color-linkedin {
+  color: #007bb6;
+}
+
+.color-email {
+  color: #000;
+}
+.color-footer {
+  color: #fff;
+}
+/* ==========================================================================
+   NAV
+   ========================================================================== */
+nav img {
+  margin: 1% 0 0 0;
+  width: 10%;
+}
+
+.navbar {
+  font-size: 12px;
+}
+
+.navbar-inverse {
+  background: #fff;
+  border-color: #d4d4d4;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background: #000;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #000;
+  font-weight: bolder;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.navbar-inverse :hover .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+}
+
+/* ==========================================================================
+   HEADER SECTION
+   ========================================================================== */
+
+.btn-header {
+  margin: 5%;
+  border: 5px solid transparent;
+  border-radius: 5%;
+  padding: 2%;
+  background-color: #293ca9;
+  color: #fff;
+}
+
+.btn-header a {
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+}
+
+.btn-header:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+  color: #fff;
+}
+
+.headerText {
+  margin-top: 15%;
+}
+
+.headerText span {
+  font-family: "Kanit", sans-serif;
+  color: #293ca9;
+  font-weight: 800;
+}
+
+.headerText h2,
+h3 {
+  font-family: "Kanit", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
+
+/* ==========================================================================
+   SKILLS SECTION
+   ========================================================================== */
+.progress-skills {
+  height: 100px;
+  margin-bottom: 5%;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-content {
+  padding: 1%;
+}
+.skills-content img {
+  width: 50px;
+  margin-left: 1%;
+}
+.skills-content .skill-text {
+  display: inline-block;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.skills-content span {
+  position: sticky;
+  left: 90%;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   PROJETOS SECTION
+   ========================================================================== */
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card-project {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #000000;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poster {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.poster::before {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.card-project:hover .poster::before {
+  bottom: 0;
+}
+
+.poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.card-project:hover .poster img {
+  transform: scale(1.1);
+}
+
+.details {
+  position: absolute;
+  bottom: -110%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  background: #000a;
+  backdrop-filter: blur(16px) saturate(120%);
+  transition: 0.8s;
+  color: #fff;
+  z-index: 2;
+}
+
+.card-project:hover .details {
+  bottom: 0;
+}
+
+.details h1,
+.details h2 {
+  font-weight: 700;
+}
+
+.details h1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.details h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.details .tags {
+  display: flex;
+  gap: 0.375em;
+  margin-bottom: 0.875em;
+  font-size: 0.85em;
+}
+
+.details .tags span {
+  padding: 0.35rem 0.65rem;
+  color: #fff;
+  border: 1.5px solid rgba(255 255 255 / 0.4);
+  border-radius: 4px;
+  border-radius: 50px;
+}
+
+.details .desc {
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.details .cast h3 {
+  margin-bottom: 0.5em;
+}
+
+.details .cast ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.details .cast ul li {
+  list-style: none;
+  margin: 0 25% 0 -20%;
+}
+
+.details .cast ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-custom {
+  border-radius: 10%;
+  background-color: #293ca9;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  font-weight: bolder;
+  color: #fff;
+}
+
+.card {
+  display: inline-block;
+  padding: 5%;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*==========================================
+   TIMELINE SECTION
+    =====================================================*/
+
+.card img {
+  width: 50%;
+  height: 50%;
+}
+
+.main-timeline-2 {
+  position: relative;
+}
+
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #5765b1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #5765b1;
+  top: 50%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right-2::after {
+  left: -14px;
+}
+
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
+
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+
+#footer {
+  background-color: #293ca9;
+  color: #fff;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid #d4d4d4;
+}
+.icons-footer a {
+  margin-right: 3%;
+}
+
+.icons-footer {
+  margin-top: 5%;
+}
+
+/* ==========================================================================
+   MEDIA QUERY
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+}
