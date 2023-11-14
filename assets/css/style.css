@@ -149,6 +149,7 @@ nav img {
 
 .headerText {
   margin-top: 15%;
+  text-align: center;
 }
 
 .headerText span {
@@ -171,6 +172,7 @@ h3 {
 /* ==========================================================================
    SKILLS SECTION
    ========================================================================== */
+
 .progress-skills {
   height: 100px;
   margin-bottom: 5%;

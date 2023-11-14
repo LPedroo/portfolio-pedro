@@ -36,23 +36,3 @@ function frameLooper() {
   loopTimer = setTimeout("frameLooper()", 70);
 }
 frameLooper();
-
-// function remove() {
-//   const menu = document.querySelector(".in");
-//   const item = document.querySelector("#menu");
-
-//   if (menu) {
-//     remove;
-//   } else {
-//     item.classList.add("in");
-//   }
-// }
-
-// menu.addEventListener("click", remove);
-// menu.addEventListener("click", () => {
-//   if (menu) {
-//     item.classList.remove("in");
-//   } else {
-//     item.classList.add("in");
-//   }
-// });
