@@ -53,7 +53,7 @@
             <span class="icon-bar"></span>
           </button>
          <a href="#"><img src="/assets/img/logos/logoPortfolio.png">
-         <p style=" font-family: Kanit, sanserif; display: inline-block; margin-bottom: 10px; margin-left: 5%; font-weight: bold; font-size: 15px; color: #000;">PORTFÓLIO</p></a>
+         <p class="title-nav" style=" font-family: Kanit, sanserif; display: inline-block; margin-bottom: 10px; margin-left: 5%; font-weight: bold; font-size: 15px; color: #000;">PORTFÓLIO</p></a>
         </div>
         <div id="menu" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right navText">
@@ -498,12 +498,13 @@
             >
               <h3 class="title">Entre em contato comigo</h3>
               <hr />
-              <form action="https://formspree.io/pedroferreira0212@gmail.com" method="post">
+              <form action="https://formsubmit.co/pedroferreira0212@gmail.com" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
                       <input
                         type="text"
+                        name="name"
                         class="form-control"
                         required="required"
                         placeholder="Nome"
@@ -513,7 +514,8 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <input
-                        type="text"
+                        type="email"
+                        name="email"
                         class="form-control"
                         required="required"
                         placeholder="Email"
@@ -527,6 +529,7 @@
                     
                       <input
                         type="text"
+                        name="assunto"
                         class="form-control"
                         required="required"
                         placeholder="Assunto"
@@ -547,12 +550,15 @@
                       ></textarea>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn btn-custom ">
+                      <button type="submit" class="btn btn-custom">
                        Enviar 
                       </button>
                     </div>
                   </div>
                 </div>
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
               </form>
             </div>
           </div>
