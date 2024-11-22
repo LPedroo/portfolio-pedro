@@ -99,6 +99,18 @@ p {
   color: #fff;
 }
 
+.btn-header,
+.btn-form {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #293ca9;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
 /* ==========================================================================
    NAV
    ========================================================================== */
@@ -142,13 +154,8 @@ nav img {
    ========================================================================== */
 
 .btn-header {
-  margin: 5%;
-  border: 5px solid transparent;
-  border-radius: 25px;
-  width: 150px;
-  padding: 2%;
-  background-color: #293ca9;
-  color: #fff;
+  width: 180px;
+  height: 50px;
 }
 
 .btn-header a {
@@ -183,35 +190,26 @@ h3 {
    SKILLS SECTION
    ========================================================================== */
 
-.progress-skills {
-  height: 100px;
-  margin-bottom: 5%;
+.skills img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-skills {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  padding: 10%;
   position: relative;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.skills-content {
-  padding: 1%;
+.row-solo .card-skills {
+  padding: 3%;
+  left: 3%;
 }
-.skills-content img {
-  width: 50px;
-  margin-left: 1%;
-}
-.skills-content .skill-text {
-  display: inline-block;
-  margin-left: 5%;
-  font-weight: bold;
-}
-
-.skills-content span {
-  position: sticky;
-  left: 90%;
-  padding-right: 15px;
-  font-weight: bold;
-}
-
 /* ==========================================================================
    PROJETOS SECTION
    ========================================================================== */
@@ -452,11 +450,10 @@ h3 {
    CONTACT SECTION
    ========================================================================== */
 .btn-form {
-  width: 110px;
-  border-radius: 25px;
-  background-color: #293ca9;
-  color: #fff;
+  width: 140px;
+  height: 40px;
 }
+
 /* ==========================================================================
    FOOTER SECTION
    ========================================================================== */
@@ -521,5 +518,31 @@ h3 {
   .btn-header:hover {
     transform: scaleY(1.1);
     color: #293ca9;
+  }
+}
+
+/* Para telas menores que 767px */
+@media screen and (max-width: 768px) {
+  .div-skills-section .row {
+    display: flex;
+    flex-wrap: wrap; /* Impede que as colunas quebrem para a próxima linha */
+  }
+
+  .skills {
+    flex: 0 0 33.3333%; /* Cada item ocupa 1/3 da linha */
+    max-width: 33.3333%;
+    box-sizing: border-box; /* Garante que padding/margens não quebrem o layout */
+    margin: 1% 0;
+  }
+  .card-skills {
+    padding: 12%;
+  }
+  .row-solo {
+    position: relative;
+    margin: 0 35%;
+  }
+
+  .row-solo .card-skills {
+    padding: 32%;
   }
 }
