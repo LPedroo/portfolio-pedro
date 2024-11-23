@@ -110,7 +110,23 @@ p {
   z-index: 0;
   border-radius: 10px;
 }
+.secondAboutSection,
+.projectSection {
+  background: #293ca9;
+}
 
+.aboutSection .title,
+.projectSection .title {
+  color: #fff;
+}
+.aboutSection .titulo-com-linha,
+.projectSection .titulo-com-linha {
+  color: #fff;
+}
+.aboutSection .subtitle,
+.projectSection .subtitle {
+  color: #ecdfdf;
+}
 /* ==========================================================================
    NAV
    ========================================================================== */
@@ -186,6 +202,24 @@ h3 {
    ABOUT SECTION
    ========================================================================== */
 
+.aboutSection {
+  margin-bottom: -8%;
+}
+.card-about {
+  display: inline-block;
+  width: 700px;
+  padding: 3%;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  top: 15vh;
+  right: 8%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-about .text {
+  margin: 1%;
+}
 /* ==========================================================================
    SKILLS SECTION
    ========================================================================== */
@@ -213,7 +247,9 @@ h3 {
 /* ==========================================================================
    PROJETOS SECTION
    ========================================================================== */
-
+.projectSection {
+  margin-top: 10%;
+}
 .wrapper {
   position: relative;
   width: 100%;
@@ -544,5 +580,48 @@ h3 {
 
   .row-solo .card-skills {
     padding: 32%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-about {
+    width: 80%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .aboutSection {
+    margin-bottom: -12%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSection {
+    margin-bottom: -18%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .aboutSection {
+    margin-bottom: -20%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .aboutSection {
+    margin-bottom: -22%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .aboutSection {
+    margin-bottom: -28%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .aboutSection {
+    margin-bottom: -30%;
   }
 }

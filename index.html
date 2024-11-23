@@ -54,7 +54,7 @@
             <span class="icon-bar"></span>
           </button>
          <a href="#"><img src="/assets/img/logos/logoPortfolio.png">
-         <p class="title-nav" style=" font-family: Kanit, sanserif; display: inline-block; margin-bottom: 10px; margin-left: 5%; font-weight: bold; font-size: 15px; color: #000;">PORTFÓLIO</p></a>
+         </a>
         </div>
         <div id="menu" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right navText">
@@ -88,12 +88,12 @@
     <!--END HEADER SECTION -->
 
     <!--ABOUT SECTION -->
-    <section id="about-section">
-      <div class="container">
-        <div class="row main-top-margin text-center">
+    <section id="about-section" class="aboutSection">
+      <div class="container" >
+      <div class="row main-top-margin text-center" >
           <div
             class="col-md-8 col-md-offset-2"
-            data-scrollreveal="enter top and move 100px, wait 0.3s"
+            data-scrollreveal="enter top and move 100px, wait 0.3s" 
           >
             <h1 class="title">Sobre</h1>
             <div class="titulo-com-linha"></div>
@@ -101,18 +101,16 @@
               Minha História e Minha Identidade
             </p>
           </div>
-        </div>
-        <!-- ./ Main Heading-->
-        <div class="row main-low-margin text-center">
+        </div> </div>
+      </section>
+    <section  class="secondAboutSection">
+      <div class="container">
+        <div class="row main-low-margin text-center"  > 
+           <div class="card-about col-md-offset-2" style="background: #fff;"> 
           <div
-            class="col-md-3"
-            data-scrollreveal="enter left and move 100px, wait 0.4s"
-          >
-            <img
-              class="img-circle"
-              src="/assets/img/logos/Profile.jpg"
-              alt="ProfileImg"
-            />
+            class="col-md-8 col-md-offset-2"
+            data-scrollreveal="enter left and move 100px, wait 0.4s">
+            <img class="img-circle" src="/assets/img/logos/Profile.jpg"alt="ProfileImg"/>
             <h4><strong>Pedro Lucas Ferreira</strong></h4>
             <p class="subtitle">Desenvolvedor FullStack</p>
             <p class="skill-text">
@@ -120,24 +118,24 @@
               <a href="https://www.linkedin.com/in/pedro-lucas-ferreira-7a4a97260/" target="_blank"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
               <a href="mailto:pedroferreira0212@gmail.com"><i class="fa fa-envelope fa-2x color-email" aria-hidden="true"></i></i ></a>
             </p>
-          </div>
-
-          <div
-            class="col-md-7 col-sm-7 col-md-offset-1 text-justify"
-            data-scrollreveal="enter top and move 100px, wait 0.4s"
-          >
+          </div>   
+        <div class="row">
+            <div
+            class="col-md-8 col-md-offset-2"
+            data-scrollreveal="enter top and move 100px, wait 0.4s">
             <p class="text">
               "Comecei minha jornada acadêmica em 2022, ingressando na faculdade para cursar Análise e Desenvolvimento de Sistemas. Além disso, busquei aprimorar minhas habilidades por conta própria, concluindo cursos de desenvolvimento focados em tecnologias como JavaScript, ReactJS, TypeScript, NodeJS, Bootstrap, CSS3 e SASS. Estou comprometido em me tornar um desenvolvedor versátil e pronto para enfrentar os desafios do mundo da programação."
             </p>
           </div>
         </div>
-        <!-- ./ Row Content-->
       </div>
-    </section>
+    </div>
+  </div>
+      </section>
     <!-- END ABOUT SECTION -->
     
     <!--SKILLS SECTION-->
-    <section id="skills-section">
+    <section id="skills-section" class="skillSection" style="margin-top: 10%;">
       <div class="container">
         <div class="row main-top-margin text-center">
           <div
@@ -322,7 +320,7 @@
     <!-- END SKILLS SECTION-->
 
     <!--PROJETOS SECTION -->
-    <section id="projects-section">
+    <section id="projects-section" class="projectSection">
       <div class="container">
         <div
           class="row main-top-margin text-center"
@@ -338,7 +336,7 @@
         </div>
 
       <div class="row">
-        <!-- Calculadora JS -->   
+        <!--Quiz de Personalidade -->   
           <div class="col-md-4 " data-scrollreveal="enter top and move 100px, wait 0.4s">
             <div class="wrapper">
               <div class="card-project">
@@ -394,126 +392,40 @@
             </div>
           </div>
 
-       <!-- Reserva de Cinema --> 
-       <div class="col-md-4 " data-scrollreveal="enter top and move 100px, wait 0.4s">
-         <div class="wrapper">
-           <div class="card-project">
-             <div class="poster"><img src="/assets/img/projetos/reservaDeCinema.png"  alt=""></div>
-             <div class="details">
-               <h1>Reservas de Cinema</h1>
-               <br>
-               <div class="tags">
-                 <span class="tag">HTML</span>
-                 <span class="tag">CSS</span>   
-                 <span class="tag">JavaScript</span>                
-               </div>
-               <p class="desc">
-                "Criei um sistema de reserva de poltronas em JavaScript, permitindo aos usuários escolher assentos de forma interativa e eficiente."
-               </p>
-               <div class="cast">
-                 <h4>Links</h4>
-                 <ul>
-                   <li><a href="https://github.com/LPedroo/Sistema-de-Reservas-de-Cinema" class="btn btn-custom" target="_blank">Repositório</a></li>
-                   <li><a href="https://sistema-de-reservas-de-cinema.vercel.app/" class="btn btn-custom" target="_blank">Site</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-
+         <!-- Calculadora EMIT --> 
+          <div class="col-md-4" data-scrollreveal="enter bottom and move 100px, wait 0.4s">
+        <div class="wrapper">
+          <div class="card-project">
+            <div class="poster"><img src="/assets/img/projetos/calculadoraEMI.png"  alt=""></div>
+            <div class="details">
+              <h1>Calculadora EMI</h1>
+              <br>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <p class="desc">
+               "Calculadora EMI com Gráfico Pizza: Visualização Financeira com JSChart."
+              </p>
+              <div class="cast">
+                <h4>Links</h4>
+                <ul>
+                  <li><a href="https://github.com/LPedroo/Calculadora-EMI" class="btn btn-custom" target="_blank">Repositório</a></li>
+                  <li><a href="https://lpedroo.github.io/Calculadora-EMI/" class="btn btn-custom" target="_blank">Site</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
       </div>
 
-     <div class="row">
-        <!-- Calculadora EMI --> 
-       <div class="col-md-4" data-scrollreveal="enter bottom and move 100px, wait 0.4s">
-         <div class="wrapper">
-           <div class="card-project">
-             <div class="poster"><img src="/assets/img/projetos/calculadoraEMI.png"  alt=""></div>
-             <div class="details">
-               <h1>Calculadora EMI</h1>
-               <br>
-               <div class="tags">
-                 <span class="tag">HTML</span>
-                 <span class="tag">CSS</span>
-                 <span class="tag">JavaScript</span>
-               </div>
-               <p class="desc">
-                "Calculadora EMI com Gráfico Pizza: Visualização Financeira com JSChart."
-               </p>
-               <div class="cast">
-                 <h4>Links</h4>
-                 <ul>
-                   <li><a href="https://github.com/LPedroo/Calculadora-EMI" class="btn btn-custom" target="_blank">Repositório</a></li>
-                   <li><a href="https://lpedroo.github.io/Calculadora-EMI/" class="btn btn-custom" target="_blank">Site</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-
-       <!-- Landin Page -->
-       <div class="col-md-4" data-scrollreveal="enter top and move 100px, wait 0.4s">
-         <div class="wrapper">
-           <div class="card-project">
-             <div class="poster"><img src="/assets/img/projetos/landin-page.png"  alt=""></div>
-             <div class="details">
-               <h1>Landin Page</h1>
-               <br>
-               <div class="tags">
-                 <span class="tag">HTML</span>
-                 <span class="tag">SASS</span>                
-               </div>
-               <p class="desc">
-                "Landin Page com SASS: Design sofisticado para resultados impactantes e eficazes."
-               </p>
-               <div class="cast">
-                 <h4>Links</h4>
-                 <ul>
-                   <li><a href="https://github.com/LPedroo/Landin-Page" class="btn btn-custom" target="_blank">Repositório</a></li>
-                   <li><a href="https://lpedroo.github.io/Landin-Page/" class="btn btn-custom" target="_blank">Site</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-
-       <!--To Do List--> 
-       <div class="col-md-4" data-scrollreveal="enter bottom and move 100px, wait 0.4s">
-         <div class="wrapper">
-           <div class="card-project">
-             <div class="poster"><img src="/assets/img/projetos/toDoList.png"  alt=""></div>
-             <div class="details">
-               <h1>To Do List</h1>
-               <br>
-               <div class="tags">
-                 <span class="tag">HTML</span>
-                 <span class="tag">CSS</span>
-                 <span class="tag">JavaScript</span>
-               </div>
-               <p class="desc">
-                "To-Do List interativo com HTML, CSS e JavaScript para simplificar suas compras. Marque itens, adicione novos e mantenha-se organizado!"
-               </p>
-               <div class="cast">
-                 <h4>Links</h4>
-                 <ul>
-                   <li><a href="https://github.com/LPedroo/to-do-list" class="btn btn-custom" target="_blank">Repositório</a></li>
-                   <li><a href="https://lpedroo.github.io/to-do-list/" class="btn btn-custom" target="_blank">Site</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-    </div>
     </section>
     <!--END PROJETOS SECTION -->
 
     <!--TIMELINE SECTION -->
-    <section id="qualifications-section">
+    <section id="qualifications-section" class="timelineSection">
       <div class="container">
         <div
           class="row main-top-margin text-center"
@@ -567,7 +479,7 @@
     <!--END TIMELINE SECTION -->
 
     <!--CONTACT SECTION -->
-    <section id="contact-section">
+    <section id="contact-section" class="contactSection">
       <div class="container">
         <div class="row main-top-margin text-center">
           <div
