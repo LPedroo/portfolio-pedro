@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink dark:bg-ink dark:text-cream transition-colors duration-300;
+}
+
+::selection {
+  @apply bg-accent text-white;
+}
+
+.tag-pill {
+  @apply inline-flex items-center rounded-full border border-line px-3 py-1 text-xs text-ink/70 dark:border-white/15 dark:text-cream/70;
+}
+
+.section-label {
+  @apply text-xs font-semibold uppercase tracking-widest text-ink/50 dark:text-cream/50;
+}
