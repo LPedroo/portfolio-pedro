@@ -5,6 +5,23 @@ import { experiences } from "@/data/experience";
 import { IconClock, IconPin, iconFor } from "@/components/icons";
 import WorkCarousel from "@/components/WorkCarousel";
 
+const COMPANY_LABEL_OVERRIDES: Record<string, string> = {
+  "iK3 Engenharia": "IK3",
+  "VRL Technology": "VRL",
+  "Faro Beach Club": "FARO",
+};
+
+function companyInitials(company: string) {
+  if (COMPANY_LABEL_OVERRIDES[company]) return COMPANY_LABEL_OVERRIDES[company];
+  const words = company.trim().split(/\s+/);
+  if (words.length === 1) return words[0].slice(0, 3).toUpperCase();
+  return words
+    .slice(0, 3)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+}
+
 export default function TimelinePage() {
   const sectionRefs = useRef<Array<HTMLElement | null>>([]);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -103,6 +120,37 @@ export default function TimelinePage() {
       </aside>
 
       <div className="flex-1 py-10 lg:py-24">
+        <div className="sticky top-16 z-30 -mx-6 mb-6 bg-cream/95 px-6 py-4 backdrop-blur dark:bg-ink/95 lg:hidden">
+          <span className="section-label mb-3 block">Trajetória Profissional</span>
+          <div className="relative">
+            <div className="absolute left-0 right-0 top-[7px] h-px bg-line dark:bg-white/10" />
+            <div className="relative flex justify-between">
+              {experiences.map((exp, i) => (
+                <button
+                  key={exp.id}
+                  onClick={() => scrollTo(i)}
+                  className="flex flex-col items-center gap-2 px-1"
+                >
+                  <span
+                    className={`h-3.5 w-3.5 rounded-full border-2 bg-cream transition dark:bg-ink ${i === activeIndex
+                        ? "border-accent bg-accent ring-4 ring-accent/20"
+                        : i < activeIndex
+                          ? "border-accent bg-accent"
+                          : "border-ink/30 dark:border-cream/30"
+                      }`}
+                  />
+                  <span
+                    className={`text-[11px] font-semibold uppercase tracking-wide ${i === activeIndex ? "text-accent" : "text-ink/40 dark:text-cream/40"
+                      }`}
+                  >
+                    {companyInitials(exp.company)}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {experiences.map((exp, i) => (
           <section
             key={exp.id}

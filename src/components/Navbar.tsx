@@ -14,15 +14,15 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-cream/90 backdrop-blur dark:border-white/10 dark:bg-ink/90">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2.5">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
+        <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/img/logos/favicon.png"
             alt="Pedro Ferreira"
-            className="h-8 w-8 dark:invert"
+            className="h-8 w-8 shrink-0 dark:invert"
           />
-          <span className="flex flex-col leading-none">
+          <span className="hidden flex-col leading-none sm:flex">
             <span className="text-lg font-extrabold tracking-tight">PEDRO</span>
             <span className="text-[10px] font-medium tracking-widest text-ink/50 dark:text-cream/50">
               FERREIRA
@@ -30,7 +30,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden gap-8 md:flex">
+        <nav className="flex gap-3 sm:gap-8">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
@@ -50,6 +50,16 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <ThemeToggle />
+          <a
+            href="/cv/CV-Pedro-Ferreira.pdf"
+            download
+            aria-label="Baixar CV"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-ink transition hover:border-accent dark:border-white/15 dark:text-cream sm:hidden"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" />
+            </svg>
+          </a>
           <a
             href="/cv/CV-Pedro-Ferreira.pdf"
             download

@@ -145,11 +145,11 @@ export const experiences: Experience[] = [
       },
     ],
     work: [
-      { image: "/img/projects/faro-beach-club-home.png", title: "Faro Beach Club — Home" },
-      { image: "/img/projects/faro-beach-club-eventos.png", title: "Faro Beach Club — Eventos" },
-      { image: "/img/projects/faro-beach-club-estrutura.png", title: "Faro Beach Club — Estrutura & Serviço" },
-      { image: "/img/projects/faro-beach-club-shows.png", title: "Faro Beach Club — Shows" },
-      { image: "/img/projects/faro-beach-club-midia.png", title: "Faro Beach Club — Na Mídia & Blog" },
+      { image: "/img/projects/faro-beach-club-home.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-eventos.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-estrutura.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-shows.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-midia.png", title: "Faro Beach Club" },
     ],
   },
   {
