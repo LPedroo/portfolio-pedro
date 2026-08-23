@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
     id: "ik3-engenharia",
     year: "2025",
     company: "iK3 Engenharia",
-    role: "Desenvolvedor Full Stack (PJ)",
+    role: "Desenvolvedor Full Stack",
     period: "Março 2025 – Outubro 2026",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
     id: "vrl-technology",
     year: "2025",
     company: "VRL Technology",
-    role: "Desenvolvedor Front-End (PJ)",
+    role: "Desenvolvedor Front-End",
     period: "Janeiro 2025 – Junho 2026",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
@@ -112,10 +112,10 @@ export const experiences: Experience[] = [
   },
   {
     id: "faro-beach-club",
-    year: "2025",
+    year: "2024",
     company: "Faro Beach Club",
-    role: "Freelancer",
-    period: "Maio 2025 – Julho 2026",
+    role: "Desenvolvedor Full Stack",
+    period: "Junho 2024 – Janeiro 2025",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
       "Criação e manutenção contínua do site do Faro Beach Club, casa de eventos e shows no Leblon frequentada por celebridades e grandes produções.",
@@ -154,10 +154,10 @@ export const experiences: Experience[] = [
   },
   {
     id: "desbloquerio",
-    year: "2025",
+    year: "2024",
     company: "DesbloqueRio",
-    role: "Freelancer",
-    period: "Julho 2025 – Maio 2026",
+    role: "Desenvolvedor Front-End & Marketing Digital",
+    period: "Setembro 2023 – Junho 2024",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
       "Reconstruí do zero o site institucional de um studio automotivo (DesbloqueRio), migrando de um WordPress feito pelo próprio cliente para uma stack moderna e melhorando o SEO em 100%.",
