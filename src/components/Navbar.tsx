@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 
 const links = [
-  { href: "/", label: "Background" },
-  { href: "/portfolio", label: "Portfolio" },
+  { href: "/", label: "Trajetória" },
+  { href: "/portfolio", label: "Portfólio" },
 ];
 
 export default function Navbar() {

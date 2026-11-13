@@ -18,7 +18,7 @@ export default function WorkCarousel({ slides }: { slides: Slide[] }) {
   return (
     <div className="mt-8 max-w-xl">
       <div className="mb-3 flex items-center justify-between">
-        <span className="section-label">Selected Work</span>
+        <span className="section-label">Trabalhos</span>
         <div className="flex gap-2">
           <button
             onClick={() => go(-1)}

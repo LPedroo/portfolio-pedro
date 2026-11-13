@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { experiences } from "@/data/experience";
 import { IconClock, IconPin, iconFor } from "@/components/icons";
 import WorkCarousel from "@/components/WorkCarousel";
+import SeletoArchitecture from "@/components/SeletoArchitecture";
 
 const COMPANY_LABEL_OVERRIDES: Record<string, string> = {
   "Seleto Store": "SELETO",
@@ -66,7 +67,7 @@ export default function TimelinePage() {
       <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-60 shrink-0 flex-col justify-between py-10 lg:flex">
         <div>
           <div className="mb-6 flex items-center justify-between">
-            <span className="section-label">Career Timeline</span>
+            <span className="section-label">Trajetória Profissional</span>
             <span className="text-xs font-semibold text-ink/50 dark:text-cream/50">
               {String(activeIndex + 1).padStart(2, "0")}
             </span>
@@ -111,7 +112,7 @@ export default function TimelinePage() {
 
         <div>
           <div className="mb-2 flex items-center justify-between text-xs text-ink/50 dark:text-cream/50">
-            <span className="section-label">Scroll Progress</span>
+            <span className="section-label">Progresso</span>
             <span className="font-semibold text-accent">{progress}%</span>
           </div>
           <div className="h-1 w-full overflow-hidden rounded-full bg-line dark:bg-white/10">
@@ -181,6 +182,8 @@ export default function TimelinePage() {
                 <p key={idx}>{p}</p>
               ))}
             </div>
+
+            {exp.architecture === "seleto" && <SeletoArchitecture />}
 
             {exp.work && exp.work.length > 0 && <WorkCarousel slides={exp.work} />}
 

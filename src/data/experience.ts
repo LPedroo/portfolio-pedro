@@ -16,6 +16,7 @@ export type Experience = {
   skillGroups: SkillGroup[];
   work?: { image: string; title: string }[];
   link?: string;
+  architecture?: "seleto";
 };
 
 // Pra cada XP, me manda as techs que voce usou nela que eu atualizo o skillGroups.
@@ -57,6 +58,7 @@ export const experiences: Experience[] = [
         skills: ["Bots em Python", "Chat de Atendimento", "Sincronização ERP ↔ E-commerce"],
       },
     ],
+    architecture: "seleto",
     work: [
       { image: "/img/projects/seleto-analytics.png", title: "Sistema de Gestão Seleto — Performance de Vendas" },
       { image: "/img/projects/seleto-ranking.png", title: "Sistema de Gestão Seleto — Ranking de Vendedores" },
@@ -162,9 +164,9 @@ export const experiences: Experience[] = [
     period: "Junho 2024 – Janeiro 2025",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
-      "Criação e manutenção contínua do site do Faro Beach Club, casa de eventos e shows no Leblon frequentada por celebridades e grandes produções.",
-      "Melhoria de SEO e otimização para descoberta por LLMs (AEO/GEO), além de ajustes na infraestrutura e nos servidores do domínio.",
-      "Apoio com CRM HubSpot e suporte à estratégia de marketing digital do negócio.",
+      "Desenvolvimento e manutenção full stack do site do Faro Beach Club, casa de eventos e shows no Leblon (RJ), incluindo ajustes de infraestrutura e nos servidores do domínio.",
+      "SEO técnico e otimização para descoberta por LLMs (AEO/GEO).",
+      "Apoio à gestão de CRM (HubSpot).",
     ],
     skillGroups: [
       {
@@ -182,11 +184,6 @@ export const experiences: Experience[] = [
         icon: "cloud",
         skills: ["Servidores & Domínio", "HubSpot CRM"],
       },
-      {
-        label: "Marketing Digital",
-        icon: "ai",
-        skills: ["Marketing Digital", "SEO"],
-      },
     ],
     work: [
       { image: "/img/projects/faro-beach-club-home.png", title: "Faro Beach Club" },
@@ -200,13 +197,12 @@ export const experiences: Experience[] = [
     id: "desbloquerio",
     year: "2023",
     company: "DesbloqueRio",
-    role: "Desenvolvedor Front-End & Marketing Digital",
+    role: "Desenvolvedor Front-End",
     period: "Setembro 2023 – Junho 2024",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
-      "Reconstruí do zero o site institucional de um studio automotivo (DesbloqueRio), migrando de um WordPress feito pelo próprio cliente para uma stack moderna e melhorando o SEO em 100%.",
-      "Apoiei diretamente a estratégia de marketing digital: gestão do Instagram, implementação de Google Pixel e Meta Pixel, criação de anúncios segmentados e conquista do selo de verificado nas redes.",
-      "Com o conjunto dessas ações, o cliente reportou um aumento de 40% nas vendas.",
+      "Reconstruí do zero o site institucional de um studio automotivo, migrando de WordPress para Next.js e elevando o SEO em 100%.",
+      "Implementei Google Pixel e Meta Pixel e apoiei a estratégia digital com anúncios segmentados; o cliente reportou aumento de 40% nas vendas após o conjunto dessas ações.",
     ],
     skillGroups: [
       {
@@ -220,9 +216,9 @@ export const experiences: Experience[] = [
         skills: ["Next.js", "React", "Tailwind CSS", "Contentful (Headless CMS)"],
       },
       {
-        label: "Marketing Digital",
-        icon: "ai",
-        skills: ["Google Pixel", "Meta Pixel", "Anúncios Segmentados", "Gestão de Instagram", "Selo de Verificado"],
+        label: "Integrações & Analytics",
+        icon: "cloud",
+        skills: ["Google Pixel", "Meta Pixel", "SEO Técnico"],
       },
     ],
     work: [
@@ -253,7 +249,7 @@ export const experiences: Experience[] = [
       {
         label: "Frontend",
         icon: "frontend",
-        skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "IA", "ChatGPT"],
+        skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"],
       },
       {
         label: "Infra",

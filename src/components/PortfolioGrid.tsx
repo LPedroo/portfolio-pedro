@@ -53,16 +53,31 @@ export default function PortfolioGrid() {
                 </div>
               )}
             </div>
-            <div className="flex items-start justify-between gap-4 p-5">
-              <div>
-                <h3 className="font-semibold">{project.title}</h3>
-                <p className="mt-1 text-sm text-ink/60 dark:text-cream/60">
-                  {project.company} · {project.role}
-                </p>
+            <div className="p-5">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="font-semibold">{project.title}</h3>
+                  <p className="mt-1 text-sm text-ink/60 dark:text-cream/60">
+                    {project.company} · {project.role}
+                  </p>
+                </div>
+                <span className="shrink-0 text-xs font-semibold text-ink/40 dark:text-cream/40">
+                  {project.year}
+                </span>
               </div>
-              <span className="shrink-0 text-xs font-semibold text-ink/40 dark:text-cream/40">
-                {project.year}
-              </span>
+              <p className="mt-4 text-sm leading-relaxed text-ink/75 dark:text-cream/75">{project.summary}</p>
+              {project.highlight && (
+                <p className="mt-3 inline-flex rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+                  {project.highlight}
+                </p>
+              )}
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.stack.map((tech) => (
+                  <span key={tech} className="tag-pill">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
             {(project.repo || project.site) && (
               <div className="flex gap-4 border-t border-line px-5 py-3 text-sm dark:border-white/10">

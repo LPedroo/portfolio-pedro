@@ -38,22 +38,24 @@ export default function Home() {
               >
                 pedroferreira0212@gmail.com
               </a>
-              <a
-                href="https://linkedin.com/in/pedro-lucas-ferreira-7a4a97260"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-semibold text-ink/70 transition hover:text-accent dark:text-cream/70"
-              >
-                LinkedIn ↗
-              </a>
-              <a
-                href="https://github.com/LPedroo"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-semibold text-ink/70 transition hover:text-accent dark:text-cream/70"
-              >
-                GitHub ↗
-              </a>
+              <div className="flex items-center gap-5 whitespace-nowrap">
+                <a
+                  href="https://linkedin.com/in/pedro-lucas-ferreira-7a4a97260"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-semibold text-ink/70 transition hover:text-accent dark:text-cream/70"
+                >
+                  LinkedIn ↗
+                </a>
+                <a
+                  href="https://github.com/LPedroo"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-semibold text-ink/70 transition hover:text-accent dark:text-cream/70"
+                >
+                  GitHub ↗
+                </a>
+              </div>
             </div>
           </div>
 
