@@ -6,6 +6,7 @@ import { IconClock, IconPin, iconFor } from "@/components/icons";
 import WorkCarousel from "@/components/WorkCarousel";
 
 const COMPANY_LABEL_OVERRIDES: Record<string, string> = {
+  "Seleto Store": "SELETO",
   "iK3 Engenharia": "IK3",
   "VRL Technology": "VRL",
   "Faro Beach Club": "FARO",

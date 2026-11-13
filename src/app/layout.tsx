@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 import ThemeScript from "@/components/ThemeScript";
 
 export const metadata: Metadata = {
-  title: "Pedro Ferreira | Desenvolvedor Full Stack",
+  title: "Pedro Ferreira | Full Stack Developer",
   description:
-    "Portfólio de Pedro Lucas Ferreira, Desenvolvedor Full Stack Pleno especializado em React, Next.js, TypeScript e Node.js.",
+    "Portfólio de Pedro Lucas Ferreira, Full Stack Developer com foco em engenharia de software, arquitetura de sistemas, backend (Java, Spring Boot, Node.js, Go), integrações e Cloud & DevOps.",
   icons: { icon: "/img/logos/favicon.png" },
 };
 

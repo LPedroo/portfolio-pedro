@@ -9,8 +9,8 @@ export default function PortfolioPage() {
           Trabalho que conecta o sistema inteiro.
         </h1>
         <p className="max-w-sm text-ink/70 dark:text-cream/70">
-          Produtos, sistemas internos e sites institucionais moldados de ponta a ponta —
-          da arquitetura à interface.
+          Sistemas corporativos, APIs, integrações e aplicações web construídos de ponta a
+          ponta — da arquitetura e do backend à interface e ao deploy em produção.
         </p>
       </div>
 

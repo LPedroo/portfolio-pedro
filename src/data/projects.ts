@@ -13,6 +13,15 @@ export type Project = {
 // Troque `image: null` por um screenshot em /public/img/projects quando tiver.
 export const projects: Project[] = [
   {
+    id: "seleto-gestao",
+    title: "Sistema de Gestão Seleto (ERP)",
+    company: "Seleto Store",
+    year: "2026",
+    role: "Desenvolvedor Full Stack e Arquiteto de Software",
+    image: "/img/projects/seleto-analytics.png",
+    category: "product",
+  },
+  {
     id: "ik3-os",
     title: "Sistema de Ordem de Serviço",
     company: "iK3 Engenharia",
@@ -43,7 +52,7 @@ export const projects: Project[] = [
     id: "faro-beach-club",
     title: "Faro Beach Club",
     company: "Faro Beach Club",
-    year: "2025",
+    year: "2024",
     role: "Freelancer",
     image: "/img/projects/faro-beach-club-home.png",
     category: "product",
@@ -52,7 +61,7 @@ export const projects: Project[] = [
     id: "desbloqueRio",
     title: "DesbloqueRio",
     company: "DesbloqueRio",
-    year: "2025",
+    year: "2023",
     role: "Freelancer",
     image: "/img/projects/desbloquerio-home.png",
     category: "product",
