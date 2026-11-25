@@ -27,7 +27,7 @@ export const experiences: Experience[] = [
     year: "2026",
     company: "Seleto Store",
     role: "Desenvolvedor Full Stack e Arquiteto de Software",
-    period: "Maio 2026 – Atual",
+    period: "Outubro 2026 – Atual",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
       "Responsável pela arquitetura e por todo o ecossistema tecnológico da empresa, com atuação autônoma do levantamento de necessidades ao deploy e à sustentação em produção.",
@@ -109,11 +109,48 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    id: "faro-beach-club",
+    year: "2024",
+    company: "Faro Beach Club",
+    role: "Desenvolvedor Full Stack",
+    period: "Junho 2024 – Janeiro 2025",
+    location: ["Rio de Janeiro, RJ – BR"],
+    summary: [
+      "Desenvolvimento e manutenção full stack do site do Faro Beach Club, casa de eventos e shows no Leblon (RJ), incluindo ajustes de infraestrutura e nos servidores do domínio.",
+      "SEO técnico e otimização para descoberta por LLMs (AEO/GEO).",
+      "Apoio à gestão de CRM (HubSpot).",
+    ],
+    skillGroups: [
+      {
+        label: "Liderança & Produto",
+        icon: "leadership",
+        skills: ["Freelance", "Entrega Solo", "SEO", "AEO/GEO (Otimização para LLMs)"],
+      },
+      {
+        label: "Frontend",
+        icon: "frontend",
+        skills: ["Next.js", "React", "Tailwind CSS", "Contentful (Headless CMS)"],
+      },
+      {
+        label: "Infra & CRM",
+        icon: "cloud",
+        skills: ["Servidores & Domínio", "HubSpot CRM"],
+      },
+    ],
+    work: [
+      { image: "/img/projects/faro-beach-club-home.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-eventos.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-estrutura.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-shows.png", title: "Faro Beach Club" },
+      { image: "/img/projects/faro-beach-club-midia.png", title: "Faro Beach Club" },
+    ],
+  },
+  {
     id: "vrl-technology",
-    year: "2025",
+    year: "2023",
     company: "VRL Technology",
     role: "Desenvolvedor Front-End",
-    period: "Janeiro 2025 – Junho 2026",
+    period: "Setembro 2023 – Março 2025",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [
       "Desenvolvimento e manutenção de aplicações para 2 clientes simultâneos, em rituais ágeis (dailies, plannings e reviews), com resolução de 100% dos bugs reportados.",
@@ -154,43 +191,6 @@ export const experiences: Experience[] = [
       { image: "/img/projects/vrl-promotz-3.png", title: "Promotz" },
       { image: "/img/projects/vrl-promotz-4.png", title: "Promotz" },
       { image: "/img/projects/vrl-promotz-5.png", title: "Promotz" },
-    ],
-  },
-  {
-    id: "faro-beach-club",
-    year: "2024",
-    company: "Faro Beach Club",
-    role: "Desenvolvedor Full Stack",
-    period: "Junho 2024 – Janeiro 2025",
-    location: ["Rio de Janeiro, RJ – BR"],
-    summary: [
-      "Desenvolvimento e manutenção full stack do site do Faro Beach Club, casa de eventos e shows no Leblon (RJ), incluindo ajustes de infraestrutura e nos servidores do domínio.",
-      "SEO técnico e otimização para descoberta por LLMs (AEO/GEO).",
-      "Apoio à gestão de CRM (HubSpot).",
-    ],
-    skillGroups: [
-      {
-        label: "Liderança & Produto",
-        icon: "leadership",
-        skills: ["Freelance", "Entrega Solo", "SEO", "AEO/GEO (Otimização para LLMs)"],
-      },
-      {
-        label: "Frontend",
-        icon: "frontend",
-        skills: ["Next.js", "React", "Tailwind CSS", "Contentful (Headless CMS)"],
-      },
-      {
-        label: "Infra & CRM",
-        icon: "cloud",
-        skills: ["Servidores & Domínio", "HubSpot CRM"],
-      },
-    ],
-    work: [
-      { image: "/img/projects/faro-beach-club-home.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-eventos.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-estrutura.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-shows.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-midia.png", title: "Faro Beach Club" },
     ],
   },
   {
