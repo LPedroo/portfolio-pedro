@@ -109,43 +109,6 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: "faro-beach-club",
-    year: "2024",
-    company: "Faro Beach Club",
-    role: "Desenvolvedor Full Stack",
-    period: "Junho 2024 – Janeiro 2025",
-    location: ["Rio de Janeiro, RJ – BR"],
-    summary: [
-      "Desenvolvimento e manutenção full stack do site do Faro Beach Club, casa de eventos e shows no Leblon (RJ), incluindo ajustes de infraestrutura e nos servidores do domínio.",
-      "SEO técnico e otimização para descoberta por LLMs (AEO/GEO).",
-      "Apoio à gestão de CRM (HubSpot).",
-    ],
-    skillGroups: [
-      {
-        label: "Liderança & Produto",
-        icon: "leadership",
-        skills: ["Freelance", "Entrega Solo", "SEO", "AEO/GEO (Otimização para LLMs)"],
-      },
-      {
-        label: "Frontend",
-        icon: "frontend",
-        skills: ["Next.js", "React", "Tailwind CSS", "Contentful (Headless CMS)"],
-      },
-      {
-        label: "Infra & CRM",
-        icon: "cloud",
-        skills: ["Servidores & Domínio", "HubSpot CRM"],
-      },
-    ],
-    work: [
-      { image: "/img/projects/faro-beach-club-home.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-eventos.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-estrutura.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-shows.png", title: "Faro Beach Club" },
-      { image: "/img/projects/faro-beach-club-midia.png", title: "Faro Beach Club" },
-    ],
-  },
-  {
     id: "vrl-technology",
     year: "2023",
     company: "VRL Technology",
@@ -194,46 +157,10 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: "desbloquerio",
-    year: "2023",
-    company: "DesbloqueRio",
-    role: "Desenvolvedor Front-End",
-    period: "Setembro 2023 – Junho 2024",
-    location: ["Rio de Janeiro, RJ – BR"],
-    summary: [
-      "Reconstruí do zero o site institucional de um studio automotivo, migrando de WordPress para Next.js e elevando o SEO em 100%.",
-      "Implementei Google Pixel e Meta Pixel e apoiei a estratégia digital com anúncios segmentados; o cliente reportou aumento de 40% nas vendas após o conjunto dessas ações.",
-    ],
-    skillGroups: [
-      {
-        label: "Liderança & Produto",
-        icon: "leadership",
-        skills: ["Freelance", "Entrega Solo", "Migração de WordPress", "SEO"],
-      },
-      {
-        label: "Frontend",
-        icon: "frontend",
-        skills: ["Next.js", "React", "Tailwind CSS", "Contentful (Headless CMS)"],
-      },
-      {
-        label: "Integrações & Analytics",
-        icon: "cloud",
-        skills: ["Google Pixel", "Meta Pixel", "SEO Técnico"],
-      },
-    ],
-    work: [
-      { image: "/img/projects/desbloquerio-home.png", title: "DesbloqueRio" },
-      { image: "/img/projects/desbloquerio-servicos.png", title: "DesbloqueRio" },
-      { image: "/img/projects/desbloquerio-blog.png", title: "DesbloqueRio" },
-      { image: "/img/projects/desbloquerio-sobre.png", title: "DesbloqueRio" },
-      { image: "/img/projects/desbloquerio-contato.png", title: "DesbloqueRio" },
-    ],
-  },
-  {
     id: "ammarhes",
     year: "2023",
-    company: "Ammarhes Consultoria",
-    role: "Estagiário de Programação e TI",
+    company: "Ammarhes QSMS | Casa Ocupacional",
+    role: "Estagiário de Desenvolvimento",
     period: "Agosto 2023 – Setembro 2023",
     location: ["Rio de Janeiro, RJ – BR"],
     summary: [

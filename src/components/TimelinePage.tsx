@@ -10,7 +10,7 @@ const COMPANY_LABEL_OVERRIDES: Record<string, string> = {
   "Seleto Store": "SELETO",
   "iK3 Engenharia": "IK3",
   "VRL Technology": "VRL",
-  "Faro Beach Club": "FARO",
+  "Ammarhes QSMS | Casa Ocupacional": "AMMARHES",
 };
 
 function companyInitials(company: string) {
